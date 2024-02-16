@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Style Recommendatoin</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-WJ00Te45t5L3/fu/ZsjX1+1Oc0kPiZRr8w6VgYLBtOZf9TBoqTwZ8jFIJsQalbm5hzrA6/8+oqW0K1PlP2X8aQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+
+    <div>
+      <h1><span id="logo">STYLELISTER</span></h1>
+    </div>
+    
+    <div class="search-box-container">
+      <input type="text" id="search-box" placeholder="검색어를 입력하세요">
+      <button id="search-button"></button>
+    </div>
+
+    <button data-id="Top-All" id="shop-button">SHOP</button>
+    <button data-id="Style" id="style-button">STYLE</button>
+
+  </header>
+    
+
+  <main>
+
+    <aside>
+
+      <button class="category-button" data-id="Top">
+        <div class="category-item">
+          <strong>상의</strong>
+          <span>Top</span>
+        </div>
+        <img id="plus_minus_icon" src="./assets/plus.svg" alt="">
+      </button>
+
+      <div class="detail-category" data-id="Top">
+        <button data-id="Top-All">전체</button>
+        <button data-id="Top-Knit">니트</button>
+        <button data-id="Top-Tshirt">티셔츠</button>
+        <button data-id="Top-Sweatshirt">맨투맨</button>
+        <button data-id="Top-Shirt" style="border-bottom: 1px solid #adadad">셔츠</button>
+      </div>
+
+      <button class="category-button" data-id="Outer">
+        <div class="category-item">
+          <strong>아우터</strong>
+          <span>Outer</span>
+        </div>
+        <img id="plus_minus_icon" src="./assets/plus.svg" alt="">
+      </button>
+
+      <div class="detail-category" data-id="Outer">
+        <button>전체</button>
+        <button>자켓</button>
+        <button>코트</button>
+        <button style="border-bottom: 1px solid #adadad">페딩</button>
+      </div>
+
+      <button class="category-button" data-id="Pants">
+        <div class="category-item">
+          <strong>바지</strong>
+          <span>Pants</span>
+        </div>
+        <img id="plus_minus_icon" src="./assets/plus.svg" alt="">
+      </button>
+
+      <div class="detail-category" data-id="Pants">
+        <button>전체</button>
+        <button>데님팬츠</button>
+        <button>코튼팬츠</button>
+        <button>슬랙스</button>
+        <button style="border-bottom: 1px solid #adadad">반바지</button>
+      </div>
+
+      <button class="category-button" data-id="Shoes">
+        <div class="category-item">
+          <strong>신발</strong>
+          <span>Shoes</span>
+        </div>
+        <img id="plus_minus_icon" src="./assets/plus.svg" alt="">
+      </button>
+
+      <div class="detail-category" data-id="Shoes">
+        <button>전체</button>
+        <button>스니커즈</button>
+        <button>구두</button>
+        <button style="border-bottom: 1px solid #adadad">샌들/슬리퍼</button>
+      </div>
+
+      <button class="category-button" data-id="Bag">
+        <div class="category-item">
+          <strong>가방</strong>
+          <span>Bag</span>
+        </div>
+        <img id="plus_minus_icon" src="./assets/plus.svg" alt="">
+      </button>
+
+      <div class="detail-category" data-id="Bag">
+        <button>전체</button>
+        <button>메신저/크로스백</button>
+        <button>백팩</button>
+        <button>클러치백</button>
+      </div>
+
+    </aside>
+
+    <section class="fashion-container">
+      <div class="fashion-items">
+        <div class="fashion-item">
+          <img src="https://image.musinsa.com/images/codimap/list/2024021508430700000014418.jpg?202402151102" alt="캐주얼">
+          <p style="font-size: 14px;"> 캐주얼 </p>
+          <h2 style="font-size: 18px; font-weight: bold;"> 스프링 캠퍼스 코디 </h2>
+        </div>
+      </div>
+      <div class="fashion-items">
+        <div class="fashion-item">
+          <img src="https://image.musinsa.com/images/codimap/list/2024021508430200000098371.jpg?202402151102" alt="캐주얼">
+          <p style="font-size: 14px;"> 아메카지 </p>
+          <h2 style="font-size: 18px; font-weight: bold;"> 헌팅 재킷 코디법 </h2>
+        </div>
+      </div>
+      <div class="fashion-items">
+        <div class="fashion-item">
+          <img src="https://image.musinsa.com/images/codimap/list/2024021508423200000007011.jpg?202402151102" alt="캐주얼">
+          <p style="font-size: 14px;"> 스트릿 </p>
+          <h2 style="font-size: 18px; font-weight: bold;"> 한 끗 다른 디테일 </h2>
+        </div>
+      </div>
+      <div class="fashion-items">
+        <div class="fashion-item">
+          <img src="https://image.musinsa.com/images/codimap/list/2024020816524600000031505.jpg?202402151102" alt="캐주얼">
+          <p style="font-size: 14px;"> 댄디 </p>
+          <h2 style="font-size: 18px; font-weight: bold;"> 핑크? 어렵지 않아 </h2>
+        </div>
+      </div>
+      <div class="fashion-items">
+        <div class="fashion-item">
+          <img src="https://image.musinsa.com/images/codimap/list/2023102611342900000076252.jpg?202402151102" alt="캐주얼">
+          <p style="font-size: 14px;"> 스포티 </p>
+          <h2 style="font-size: 18px; font-weight: bold;"> 필드 위 멋쟁이 </h2>
+        </div>
+      </div>
+      <div class="fashion-items">
+        <div class="fashion-item">
+          <img src="https://image.musinsa.com/images/codimap/list/2024012216254400000013993.jpg?202402151102" alt="캐주얼">
+          <p style="font-size: 14px;"> 데이트룩 </p>
+          <h2 style="font-size: 18px; font-weight: bold;"> 러블리 모드 </h2>
+        </div>
+      </div>
+      <div class="fashion-items">
+        <div class="fashion-item">
+          <img src="https://image.musinsa.com/images/codimap/list/2023041916263700000083070.jpg?202402151102" alt="캐주얼">
+          <p style="font-size: 14px;"> 홈웨어 </p>
+          <h2 style="font-size: 18px; font-weight: bold;"> 상큼한 휴일 </h2>
+        </div>
+      </div>
+      <div class="fashion-items">
+        <div class="fashion-item">
+          <img src="https://image.musinsa.com/images/codimap/list/2022052011151400000099622.jpg?202402151102" alt="캐주얼">
+          <p style="font-size: 14px;"> 레트로 </p>
+          <h2 style="font-size: 18px; font-weight: bold;"> 멋잘알의 OOTD </h2>
+        </div>
+      </div>
+      <div class="fashion-items">
+        <div class="fashion-item">
+          <img src="https://image.musinsa.com/images/codimap/list/2023112811252600000062987.jpg?202402151102" alt="캐주얼">
+          <p style="font-size: 14px;"> 고프코어 </p>
+          <h2 style="font-size: 18px; font-weight: bold;"> 요즘 날씨 캠핑룩 </h2>
+        </div>
+      </div>
+      <div class="fashion-items">
+        <div class="fashion-item">
+          <img src="https://image.musinsa.com/images/codimap/list/2023121413145400000054212.jpg?202402151102" alt="캐주얼">
+          <p style="font-size: 14px;"> 시크 </p>
+          <h2 style="font-size: 18px; font-weight: bold;"> 오늘은 과감하게 </h2>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
